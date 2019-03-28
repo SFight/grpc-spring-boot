@@ -25,15 +25,15 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-web'
 //    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.0'
-    compileOnly 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok:1.16.10'
 //    runtimeOnly 'mysql:mysql-connector-java'
-    annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok:1.16.10'
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     runtimeOnly 'io.grpc:grpc-netty-shaded:1.19.0'
     implementation 'io.grpc:grpc-protobuf:1.19.0'
     implementation 'io.grpc:grpc-stub:1.19.0'
     implementation 'com.google.protobuf:protobuf-gradle-plugin:0.8.8'
-
 }
 
 // Inform IDEs like IntelliJ IDEA, Eclipse or NetBeans about the generated code.
